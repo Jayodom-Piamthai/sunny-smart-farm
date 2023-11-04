@@ -349,8 +349,6 @@ h4{
     align-items: center;
 }
 .copyright{
-    position: absolute;
-    width: 100%;
     display: flex;
     background: black;
     color: gray;
