@@ -99,9 +99,8 @@
             <h1 style="position: relative;bottom: 50%;color: white;">ร้านค้าอุปกรณ์ <br>IOT Smartfarm</h1>
         </div>
     </div>
-
     <div class="copyright">
-        Copyright © 2022 CE KMITL. All Rights Reserved.
+        Copyright © 2022 CE KMITL. All Rights Reserved..
     </div>
 </body>
 <script src="mario.js"></script>

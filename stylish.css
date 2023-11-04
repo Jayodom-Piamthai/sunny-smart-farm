@@ -350,7 +350,7 @@ h4{
 }
 .copyright{
     position: absolute;
-    top: 1000%;
+    width: 100%;
     display: flex;
     background: black;
     color: gray;

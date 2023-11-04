@@ -15,11 +15,11 @@ function closeAll() {
     logForm.classList.remove("show")
 }
 function reArt(){
-    window.location.href = "article.html"
+    window.location.href = "article.php"
 }
 function reIOT(){
-    window.location.href = "dashboard.html"
+    window.location.href = "dashboard.php"
 }
 function reStore(){
-    window.location.href = "store.html"
+    window.location.href = "store.php"
 }
