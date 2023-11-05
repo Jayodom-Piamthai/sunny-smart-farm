@@ -118,7 +118,7 @@
           fill="currentColor"
         />
       </svg>
-      <h2 id="login" onclick="popupLogin()"> Login</h2>
+      <a href="login.php" id="login">Login</a>
 
 
   </div>
