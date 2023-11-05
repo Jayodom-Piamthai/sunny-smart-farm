@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include('regis/server.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

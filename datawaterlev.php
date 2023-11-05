@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include('regis/server.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -119,11 +123,11 @@
         />
     </svg>
     <a href="login.php" id="login">
-            <?php if(isset($_SESSION['username'])) : ?>
-               <strong><?php echo $_SESSION['username']; ?></strong><a href="regis/logout.php" id="login" style = "color: red;">Logout</a>
-            <?php else: ?>
-                <h3>Login</h3>
-            <?php endif ?>
+    <?php if(isset($_SESSION['username'])) : ?>
+        <strong><?php echo $_SESSION['username']; ?></strong><a href="regis/logout.php" id="login" style = "color: red;">Logout</a>
+    <?php else: ?>
+        <h3>Login</h3>
+    <?php endif ?>
     </a>
 
 
