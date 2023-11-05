@@ -16,12 +16,12 @@
          if(mysqli_num_rows($result) == 1){
            $_SESSION['username'] = $username;
            $_SESSION['success'] = "Your are now logged in";
-           header("location: index.php");
+           header("location:../index.php");
          }
          else{
             array_push($errors, "Wrong username/password combination");
             $_SESSION['error'] = "Wrong username or password try again!";
-            header("location: login.php");
+            header("location: ../login.php");
          }
        }
 

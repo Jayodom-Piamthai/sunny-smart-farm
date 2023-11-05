@@ -118,7 +118,13 @@
           fill="currentColor"
         />
       </svg>
-      <a href="login.php" id="login">Login</a>
+      <a href="login.php" id="login">
+          <?php if(isset($_SESSION['username'])) : ?>
+               <strong><?php echo $_SESSION['username']; ?></strong><a href="regis/logout.php" id="login" style = "color: red;">Logout</a>
+            <?php else: ?>
+                <h3>Login</h3>
+            <?php endif ?>
+      </a>
 
 
   </div>

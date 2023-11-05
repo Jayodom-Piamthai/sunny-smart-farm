@@ -1,3 +1,6 @@
+<?php
+include('regis/server.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +51,13 @@
                 fill="currentColor"
               />
             </svg>
-            <a href="login.php" id="login">Login</a>
+            <a href="login.php" id="login">
+            <?php if(isset($_SESSION['username'])) : ?>
+               <strong><?php echo $_SESSION['username']; ?></strong><a href="regis/logout.php" id="login" style = "color: red;">Logout</a>
+            <?php else: ?>
+                <h3>Login</h3>
+            <?php endif ?>
+            </a>
 
 
         </div>
@@ -63,7 +72,7 @@
                 <input type="checkbox" id="remember" label="Remember password?">
                 <label for="remember">Remember password</label>
             </div>
-                <input type="submit" title="submit">
+                <input type = "submit" name = "login_user" title="submit">
             <h2 style="padding-top: 20px;">dont have an account? <a onclick="switcher()">Register</a></h2>
         </form>
     </div>
@@ -72,10 +81,10 @@
             <h1>Register</h1>
             <input type="text" name="username" placeholder="Username" required>
             <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="password1" placeholder="Password" required>
-            <input type="text" name="password2 placeholder="Confirm Password" required>
+            <input type="text" name="password_1" placeholder="Password" required>
+            <input type="text" name="password_2" placeholder="Confirm Password" required>
             
-                <input type="submit" title="submit">
+                <input type = "submit" name = "reg_user"  title="submit">
             <h2 style="padding-top: 20px;">already have an account? <a onclick="switcher()">Login</a></h2>
         </form>
     </div>

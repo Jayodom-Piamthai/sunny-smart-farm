@@ -22,8 +22,8 @@
    if($password_1 != $password_2){
       array_push($errors, "The two passwords do not match");
    }
-
-   $user_chedk_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
+   
+   $user_check_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
    $query = mysqli_query($conn, $user_check_query);
    $result = mysqli_fetch_assoc($query);
 
@@ -44,12 +44,12 @@
 
       $_SESSION['username'] = $username;
       $_SESSION['success'] = "You are now logged in";
-      header('location: index.php');
+      header('location: ../../index.php ');
    }
    else{
       array_push($errors, "Username or Email already exists");
       $_SESSION['error'] = "Username or Email alreday exists";
-      header("location: register.php");
+      header("location: ../login.php");
    }
    }
 
