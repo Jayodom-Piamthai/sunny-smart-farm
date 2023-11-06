@@ -336,6 +336,7 @@ h4{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 80%;
 }
 #topics{
     width: 300px;

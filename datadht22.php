@@ -164,7 +164,7 @@
         </div>
         </div>
         <div class="data-box">
-            <h1 style="color: rgb(0, 0, 0);">
+            <h3 style="color: rgb(0, 0, 0);">
                 DHT22 โมดูลเซนเซอร์วัดความชื้นและอุณหภูมิในตัวเดียว 
                 มีความแม่นยำสูง มีตัวต้านทาน Pull up มาแล้วสามารถต่อขาทดลอง
                 ได้เลยไม่ต้องต่อเพิ่มถ้าต้องการความถูกต้องแม่นยำในการวัดอุณหภูมิ
@@ -184,7 +184,7 @@
 
             </h1>
             </div>
-            <div class="link-box" style="margin-left: 10%; margin-top: 30px; position: relative; top: 20px; left: 23%">
+            <div class="link-box" style="margin-left: 10%; margin-top: 30px; position: relative; top: 20px; right: 50%">
             <h1 style="font-size: 52px; color: rgb(0, 0, 0); padding-right: 100px;">library /code DHT22</h1>
             <a href="https://www.mediafire.com/download/6qh8q1g0kmokl4g/DHT11.rar" style="color: rgb(0, 0, 0); ">
             <h1> https://www.mediafire.com/download/6qh8q1g0kmokl4g/DHT11.rar1</h1>

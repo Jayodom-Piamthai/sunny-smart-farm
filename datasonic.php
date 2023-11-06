@@ -52,7 +52,7 @@
     </style>
     <style>
     .diagam-box {
-       width: 50%; /* กำหนดความกว้างของกล่องข้อความ */
+       width: 40%; /* กำหนดความกว้างของกล่องข้อความ */
        float: right; /* จัดวางทางขวา */
        padding: 10px; /* เพิ่ม padding เพื่อให้ข้อความไม่ติดขอบ */
        border: 1px solid transparent; /* เส้นขอบของกล่องข้อความ */
@@ -153,7 +153,7 @@
         <pre>
         <div class="image-container">
             <img src="public/images/sensors/ultrasonic.jpg" alt="Image Description"width="400" height="400" 
-            style="margin-left: 10%; margin-top: 70px; position: relative; top: 110px;left: 10%">
+            style=" margin-top: 70px; position: relative; top: 110px;left: 10%">
             <div class="text-box">
             <h1 style="color: rgb(0, 0, 0);">
                 <!-- รายละเอียดของ DHT11 อยู่ที่นี่ -->
@@ -164,7 +164,7 @@
         </div>
         </div>
         <div class="data-box">
-            <h1 style="color: rgb(0, 0, 0);">
+            <h2 style="color: rgb(0, 0, 0);">
                 เซ็นเซอร์วัดระยะทาง Ultrasonic Module HC-SR04 
             เซ็นเซอร์วัดระยะทาง Ultrasonic  HC-SR04 ใช้เสียงสะท้อน
             กลับในการคำนวณวัดระยะทาง แม่นยำที่ 2 - 400 cm ใช้ง่ายมีไลบารีมาตรฐานพร้อมใช้งาน

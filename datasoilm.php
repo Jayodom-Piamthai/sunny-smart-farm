@@ -36,7 +36,7 @@
     </style>
     <style>
         .text-box {
-         width: 50%; /* กำหนดความกว้างของกล่องข้อความ */
+         width: 30%; /* กำหนดความกว้างของกล่องข้อความ */
          float: right; /* จัดวางทางขวา */
          padding: 10px; /* เพิ่ม padding เพื่อให้ข้อความไม่ติดขอบ */
          border: 1px solid transparent; /* เส้นขอบของกล่องข้อความ */
@@ -44,6 +44,7 @@
     .text-box h1 {
          color: rgb(0, 0, 0); /* สีของข้อความ */
          margin: 0; /* กำหนด margin เพื่อให้ไม่มีระยะห่างข้างนอกของ h1 */
+        font-size-5px;
     }
     .image-container {
          float: left; /* จัดวางรูปทางซ้าย */
@@ -52,7 +53,7 @@
     </style>
     <style>
     .diagam-box {
-       width: 50%; /* กำหนดความกว้างของกล่องข้อความ */
+       width: 30%; /* กำหนดความกว้างของกล่องข้อความ */
        float: right; /* จัดวางทางขวา */
        padding: 10px; /* เพิ่ม padding เพื่อให้ข้อความไม่ติดขอบ */
        border: 1px solid transparent; /* เส้นขอบของกล่องข้อความ */
@@ -60,6 +61,7 @@
     .diagam-box h1 {
        color: rgb(0, 0, 0); /* สีของข้อความ */
        margin: 0; /* กำหนด margin เพื่อให้ไม่มีระยะห่างข้างนอกของ h1 */
+        font-size-5px;
     }
     .image-container {
        float: left; /* จัดวางรูปทางซ้าย */

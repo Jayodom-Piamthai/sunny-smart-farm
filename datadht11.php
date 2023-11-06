@@ -153,7 +153,7 @@
         <pre>
         <div class="image-container">
             <img src="public/images/sensors/dht11.jpg" alt="Image Description"width="400" height="400" 
-            style="margin-left: 10%; margin-top: 70px; position: relative; top: 110px;left: -70%">
+            style="margin-left: 20%; margin-top: 70px; position: relative; top: 110px;left: -70%">
             <div class="text-box">
             <h1 style="color: rgb(0, 0, 0);">
                 <!-- รายละเอียดของ DHT11 อยู่ที่นี่ -->
@@ -164,7 +164,7 @@
         </div>
         </div>
         <div class="data-box">
-            <h1 style="color: rgb(0, 0, 0);">
+            <h3 style="color: rgb(0, 0, 0);">
                 DHT11 Digital Temperature and Humidity Sensor DHT11 แบบ  PCB
                 เซนเซอร์วัดความชื้นและอุณหภูมิ DHT11 แบบติดตั้งลงแผ่น PCB ง่ายต่อการใช้งาน  
                 โมดูลวัดอุณหภูมิและความชื้น (DHT11 Temperature and Humidity Sensor Module) 
@@ -189,7 +189,7 @@
 
             </h1>
             </div>
-            <div class="link-box" style="margin-left: 10%; margin-top: 30px; position: relative; top: 250px; left: 20%">
+            <div class="link-box" style="margin-left: 10%; margin-top: 30px; position: relative; top: 250px; right: 50%">
             <h1 style="font-size: 52px; color: rgb(0, 0, 0); padding-right: 100px;">library /code DHT11</h1>
             <a href="https://www.mediafire.com/download/6qh8q1g0kmokl4g/DHT11.rar" style="color: rgb(0, 0, 0); ">
             <h1> https://www.mediafire.com/download/6qh8q1g0kmokl4g/DHT11.rar1</h1>
