@@ -64,8 +64,18 @@ include('regis/server.php');
     </div>
     
     <div class="loginForm">
+    <h1>Login</h1>
+        <?php if(isset($_SESSION['error'])) : ?>
+            <div style="color:red;">
+                <h3>
+                    <?php 
+                        echo $_SESSION['errorLog'];
+                        unset($_SESSION['error']);
+                    ?>
+                </h3>
+            </div>
+        <?php endif ?>
         <form action="regis/login_db.php" method="post">
-            <h1>Login</h1>
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <div style="display: flex;flex-direction: row; padding: 10px;">
@@ -77,6 +87,16 @@ include('regis/server.php');
         </form>
     </div>
     <div class="regForm">
+    <?php if(isset($_SESSION['error'])) : ?>
+                <div class = "error">
+                    <h3>
+                        <?php 
+                            echo $_SESSION['error'];
+                            unset($_SESSION['error']);
+                        ?>
+                    </h3>
+                </div>
+            <?php endif ?>
         <form action="regis/register_db.php" method="post">
             <h1>Register</h1>
             <input type="text" name="username" placeholder="Username" required>

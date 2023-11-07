@@ -2,13 +2,13 @@
    session_start();
    
    include('server.php');
-   $errors = array();
+   $errorLog = array();
 
    if(isset($_POST['login_user'])){
        $username = mysqli_real_escape_string($conn, $_POST['username']);
        $password = mysqli_real_escape_string($conn, $_POST['password']);
        
-       if(count($errors) == 0){
+       if(count($errorLog) == 0){
          $password = md5($password);
          $query = "SELECT * FROM user WHERE username = '$username' AND password = '$password' ";
          $result = mysqli_query( $conn, $query);
@@ -19,7 +19,7 @@
            header("location:../index.php");
          }
          else{
-            array_push($errors, "Wrong username/password combination");
+            array_push($errorLog, "Wrong username/password combination");
             $_SESSION['error'] = "Wrong username or password try again!";
             header("location: ../login.php");
          }
