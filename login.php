@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('regis/server.php');
 ?>
 <!DOCTYPE html>
@@ -69,7 +70,7 @@ include('regis/server.php');
             <div style="color:red;">
                 <h3>
                     <?php 
-                        echo $_SESSION['errorLog'];
+                        echo ($_SESSION['error']);
                         unset($_SESSION['error']);
                     ?>
                 </h3>
@@ -87,12 +88,12 @@ include('regis/server.php');
         </form>
     </div>
     <div class="regForm">
-    <?php if(isset($_SESSION['error'])) : ?>
+    <?php if(isset($_SESSION['errors'])) : ?>
                 <div class = "error">
                     <h3>
                         <?php 
-                            echo $_SESSION['error'];
-                            unset($_SESSION['error']);
+                            echo $_SESSION['errors'];
+                            unset($_SESSION['errors']);
                         ?>
                     </h3>
                 </div>

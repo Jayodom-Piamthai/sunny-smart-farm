@@ -21,6 +21,8 @@
    }
    if($password_1 != $password_2){
       array_push($errors, "The two passwords do not match");
+      $_SESSION['error'] = "The two passwords do not match";
+      header("location: ../login.php");
    }
    
    $user_check_query = "SELECT * FROM user WHERE username = '$username' OR email = '$email' LIMIT 1";
@@ -44,7 +46,7 @@
 
       $_SESSION['username'] = $username;
       $_SESSION['success'] = "You are now logged in";
-      header('location: ../../index.php ');
+      header('location: ../index.php ');
    }
    else{
       array_push($errors, "Username or Email already exists");
